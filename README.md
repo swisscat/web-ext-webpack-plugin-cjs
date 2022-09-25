@@ -1,6 +1,7 @@
-# web-ext-plugin
+# web-ext-plugin-cjs
 
-A webpack plugin for running web-ext
+A webpack plugin for running web-ext for CommonJS.
+This is a fork of https://github.com/hiikezoe/web-ext-webpack-plugin, maintained for CRA-based projects which do not support ES Module syntax (yet). 
 
 ## Basic usage
 

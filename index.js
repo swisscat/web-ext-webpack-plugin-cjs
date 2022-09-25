@@ -1,10 +1,7 @@
 'use strict';
 
 import * as path from 'path';
-import { fileURLToPath } from 'url';
 import webExt from 'web-ext';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const pluginName = 'WebExtPlugin';
 
@@ -45,7 +42,7 @@ export default class WebExtPlugin {
     this.profileCreateIfMissing = profileCreateIfMissing;
     this.runLint = runLint;
     this.selfHosted = selfHosted;
-    this.sourceDir = path.resolve(__dirname, sourceDir);
+    this.sourceDir = sourceDir;
     this.startUrl = startUrl;
     this.target = target;
   }
