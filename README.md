@@ -1,21 +1,22 @@
 # web-ext-plugin-cjs
 
 A webpack plugin for running web-ext for CommonJS.
+
 This is a fork of https://github.com/hiikezoe/web-ext-webpack-plugin, maintained for CRA-based projects which do not support ES Module syntax (yet). 
 
 ## Basic usage
 
 ```bash
-$ npm install --save-dev web-ext-plugin
+$ npm install --save-dev web-ext-plugin-cjs
 
 # Or for yarn
-$ yarn add -D web-ext-plugin
+$ yarn add -D web-ext-plugin-cjs
 ```
 
 **webpack.config.mjs**
 
 ```js
-import WebExtPlugin from 'web-ext-plugin';
+import WebExtPlugin from 'web-ext-plugin-cjs';
 
 module.exports = {
   plugins: [new WebExtPlugin({ sourceDir: 'extension-dist' })],
