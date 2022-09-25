@@ -1,11 +1,11 @@
 'use strict';
 
-import * as path from 'path';
-import webExt from 'web-ext';
+const path = require('path');
+const { webExt } = require('web-ext');
 
 const pluginName = 'WebExtPlugin';
 
-export default class WebExtPlugin {
+module.exports = class WebExtPlugin {
   constructor({
     sourceDir = process.cwd(),
     artifactsDir = path.join(sourceDir, 'web-ext-artifacts'),
